@@ -1,0 +1,31 @@
+# Created by .ignore support plugin (hsz.mobi)
+/.bundle
+/vendor/bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+!/tmp/sockets/.keep
+/public/system
+/public/uploads/tmp
+/public/supports/agreement.html
+/public/supports/privacy_policy.html
+/public/supports/license_ios.html
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Ignore swap file
+*.swp
+
+# Ignore tag files
+/tags
+
+/.idea
+
+.env
+.env.development
+
+.DS_Store
