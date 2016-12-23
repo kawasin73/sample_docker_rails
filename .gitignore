@@ -29,3 +29,5 @@
 .env.development
 
 .DS_Store
+
+/node_modules

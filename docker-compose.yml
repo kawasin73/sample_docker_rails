@@ -26,6 +26,15 @@ services:
     ports: []
     tty: false
     stdin_open: false
+  webpack:
+    build:
+      context: .
+      dockerfile: "Dockerfile.node"
+    command: ["npm", "run", "webpack:serve"]
+    volumes:
+      - ".:/app"
+    ports:
+      - "8080:8080"
   db:
     image: "postgres:9.5"
     environment:
