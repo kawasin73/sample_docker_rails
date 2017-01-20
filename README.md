@@ -2,7 +2,9 @@
 
 docker-compose template for rails5
 
-Each branch ( `html`, `api` ) can be used.
+Each branch ( `html`, `master` ) can be used.
+`master` branch is api mode.
+
 Each commit message represents the executed command.
 
 ## to develop
