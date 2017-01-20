@@ -1,24 +1,35 @@
-# README
+# sample_docker_rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+docker-compose template for rails5
 
-Things you may want to cover:
+Each branch ( `html`, `api` ) can be used.
+Each commit message represents the executed command.
 
-* Ruby version
+## to develop
 
-* System dependencies
+```bash
+git clone git@github.com:kawasin73/sample_docker_rails.git
+cd sample_docker_rails
+git checkout api
+docker-compose up -d
+```
 
-* Configuration
+### How to install new gem
 
-* Database creation
+1. Add gem to Gemfile
+2. Exec `docker-compose exec spring bundle install`
 
-* Database initialization
+### rails console?
 
-* How to run the test suite
+1. Exec `docker-compose up -d spring`
+2. Exec `docker-compose exec spring rails c`
 
-* Services (job queues, cache servers, search engines, etc.)
+### How to exec rails commands?
 
-* Deployment instructions
+1. Exec `docker-compose up -d spring`
+2. Exec `docker-compose exec spring rails (any commands)`
 
-* ...
+### to attach rails process for binding.pry
+
+1. Exec `docker ps` and check the rails container name
+2. Exec `docker attach "the container name you checked"`
