@@ -1,5 +1,12 @@
 # sample_docker_rails
 
+
+## THIS IS ARCHIVED !!!!
+
+Please See [kawasin73/rails_docker_template](https://github.com/kawasin73/rails_docker_template)
+
+---
+
 docker-compose template for rails5
 
 Each branch ( `html`, `master` ) can be used.
